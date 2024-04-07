@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(250, 245, 245);
+    color: rgb(243, 237, 236);
+    background-image: url("./home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Ensures the background scrolls with the page */
+    min-height: 100vh; /* Ensures the body covers at least the full viewport height */
+}
+
+
+
+
+
+
+/* body{
+    background-color: rgb(250, 245, 245);
+    color:rgb(243, 237, 236);
+    background-image: url("./home.jpg");
+  
+    background-size: auto;
+    background-attachment: scroll;
+} */
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    gap: 4px; /* Optional: adds some space between the containers */
+}
+
+/* Adjust the width of the containers to ensure they can fit next to each other */
+.container, .container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9, .container10, .container11, .container12, .container13 {
+    width: calc(33.333% - 10px); /* Adjust based on how many containers you want per row, this example assumes 3 */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 390px){
+    body{
+        font-size: 8px;
+    }
+}
+
+
+
